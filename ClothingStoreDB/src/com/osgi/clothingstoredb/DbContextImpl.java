@@ -1,7 +1,9 @@
 package com.osgi.clothingstoredb;
 
-import com.mysql.jdbc.Connection;
+
 import java.sql.DriverManager;
+
+import com.mysql.jdbc.Connection;
 
 public class DbContextImpl implements DbContext{
 	
@@ -15,7 +17,7 @@ public class DbContextImpl implements DbContext{
 	public DbContextImpl() {
 		
 		this.driverName = "com.mysql.jdbc.Driver";
-		this.ConnectionString = "jdbc:mysql://localhost:3306/clothingdb";	
+		this.ConnectionString = "jdbc:mysql://localhost:3307/clothingdb";
 		this.dbUser = "root";
 		this.dbPassword = "";
 	
